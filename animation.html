@@ -29,13 +29,60 @@
 		}
 	}
 
+
+	#delilah{
+		width:100px;
+			height:100px;
+			background-color:hotpink;
+			border:10px solid black;
+			animation-name:dance;
+			animation-duration:3s;
+			animation-iteration-count: infinite;
+			position:absolute;
+		}
+
+		@keyframes dance {
+
+			0%{
+				width:100px;
+				height:100px;
+				left:0px;
+
+			}
+
+			50%{
+				width:300px;
+				height:300px;
+				border-radius:50%;
+				transform:rotate(360deg);
+				background-color:purple;
+				border:20px dotted blueviolet;
+				left:500px;
+
+			}
+
+			100%{
+				width:100px;
+			height:100px;
+			left:0px;
+
+			}
+		}
+
 </style>
 </head>
 
 <body>
+	<a href="projects.html">
+		<h3>
+			back to projects page
+		</h3>
+	</a>
 	<div id="bluebox">
 		
 	</div>
 
+<div id="delilah">
+</div>
 </body>
 </html>
