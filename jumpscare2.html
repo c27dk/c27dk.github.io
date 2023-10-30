@@ -2,10 +2,57 @@
 <html>
 <head>
 	<style type="text/css">
+		body{
+			background-color: white;
+		}
 		
+		#jack{
+
+			width:200px;
+			height:100px;
+			background-size: contain;
+			position: static;
+			top:300px;
+			left:500px;
+			background-repeat: no-repeat;
+			background-image:url(https://i.pinimg.com/1200x/d9/7e/62/d97e629cb6eb7f6e154bea8a7c347d7a.jpg);
+			opacity: 1;
+		}
+		#scare{
+			width:700px;
+			height: 900px;
+			position: static;
+			background-image: url(https://i.pinimg.com/236x/9b/af/90/9baf90353963d26daaa1c54235b10b38.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			opacity: 0;
+		}
+
 	</style>
 </head>
 <body>
 
+<center>
+<div id="jack"></div>
+</center>
+
+<center>
+<div id="scare"></div>
+</center>
+<script type="text/javascript">
+		document.addEventListener("click", function(){
+			
+			jack.style.opacity = "0"
+			scare.style.opacity = "1"
+
+			document.body.style.backgroundColor = "black"
+
+		
+		})
+	</script>
 </body>
 </html>
+
+
+
+

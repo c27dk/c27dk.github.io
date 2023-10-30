@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#clown{
+			width:800px;
+			height:400px;
+			background-image:url(https://i.guim.co.uk/img/media/771b1fbf98f680a716afe138a95fc2a80de9c149/0_645_3504_2101/master/3504.jpg?width=1200&quality=85&auto=format&fit=max&s=9fe9f1dbc70f30a9c1ce4c46c239dec9);
+			background-size:contain;
+			background-repeat: no-repeat;
+			position:absolute;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<div id="clown"></div>
+
+	<script type="text/javascript">
+		
+		document.addEventListener("mousemove", function(event){
+
+			clown.style.right = event.clientX+ "px";
+			clown.style.bottom = event.clientY+ "px";
+			console.log(event.clientX, event.clientY)
+		})
+
+	</script>
+
+</body>
+</html>
