@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		#donut{
+			height: 750px;
+			width: 750px;
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-image: url(https://t3.ftcdn.net/jpg/01/35/47/36/360_F_135473602_ElabWAwwtjS3t6VqHlKB4CWRY8AeOlES.jpg);
+}
+		.toppings{
+			height:125px;
+			width:125px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+		}
+		#sprinkles{
+			background-image: url(sprinkles.png);
+		}
+		#bears{
+		background-image: url(bears.png);
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<a href="projects.html">
+		<h3>
+			back to projects page
+		</h3>
+	</a>
+	
+	<div id="sprinkles" class="toppings"></div>
+	<div id="bears" class="toppings"></div>
+	
+	<div id="donut"></div>
+
+	<script type="text/javascript">
+		
+		var topping = "blah";
+
+		sprinkles.addEventListener("click", function(){
+			topping = "sprinkles"
+			console.log("sprinkles")
+		})
+
+	
+		bears.addEventListener("click", function(){
+			topping = "bears"
+			console.log("bears")
+		})
+
+		donut.addEventListener("click", function makeTopping(event){
+			var whatever = document.createElement("div");
+			whatever.classList.add("toppings");
+			document.body.appendChild(whatever);
+			whatever.style.backgroundImage = "url("+topping +".png)"
+			// whatever.style.backgroundColor="blue"
+			whatever.style.left = event.clientX + "px"
+			whatever.style.top = event.clientY + "px"
+			whatever.style.position="absolute"
+		})
+	</script>
+
+</body>
+</html>
