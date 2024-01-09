@@ -6,24 +6,27 @@
 	<title></title>
 	<style type="text/css">
 		#donut{
-			height: 750px;
-			width: 750px;
+			height: 800px;
+			width: 800px;
 			background-repeat: no-repeat;
 			background-size: contain;
-			background-image: url(https://t3.ftcdn.net/jpg/01/35/47/36/360_F_135473602_ElabWAwwtjS3t6VqHlKB4CWRY8AeOlES.jpg);
+			background-image: url(https://i.pinimg.com/originals/c6/c5/c3/c6c5c36f7a78e4111d89c2458860afdd.jpg);
 }
 		.toppings{
-			height:125px;
-			width:125px;
+			height:50px;
+			width:50px;
 			background-size: contain;
 			background-repeat: no-repeat;
 			display: inline-block;
 		}
-		#sprinkles{
-			background-image: url(sprinkles.png);
+		#eye{
+			background-image: url(eye.png);
 		}
-		#bears{
-		background-image: url(bears.png);
+		#carrot{
+		background-image: url(carrot.png);
+		}
+		#coal{
+		background-image: url(coal.png);
 		}
 		
 		
@@ -36,25 +39,31 @@
 		</h3>
 	</a>
 	
-	<div id="sprinkles" class="toppings"></div>
-	<div id="bears" class="toppings"></div>
-	<center>
+	<div id="eye" class="toppings"></div>
+	<div id="carrot" class="toppings"></div>
+	<div id="coal" class="toppings"></div>
+	
 	<div id="donut"></div>
-	</center>
+
 
 	<script type="text/javascript">
 		
 		var topping = "blah";
 
-		sprinkles.addEventListener("click", function(){
-			topping = "sprinkles"
-			console.log("sprinkles")
+		eye.addEventListener("click", function(){
+			topping = "eye"
+			console.log("eye")
 		})
 
 	
-		bears.addEventListener("click", function(){
-			topping = "bears"
-			console.log("bears")
+		 carrot.addEventListener("click", function(){
+			topping = "carrot"
+			console.log("carrot")
+		})
+
+		 coal.addEventListener("click", function(){
+			topping = "coal"
+			console.log("coal")
 		})
 
 		donut.addEventListener("click", function makeTopping(event){
@@ -68,6 +77,8 @@
 			whatever.style.position="absolute"
 		})
 	</script>
+
+	
 
 </body>
 </html>
