@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	var artists = [
+		"url(https://th-thumbnailer.cdn-si-edu.com/YgLpuKhGngeHpWh8niigsdSPZ3w=/800x800/filters:focal(354x564:355x565)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/ac/fd/acfd1736-4f87-4da1-91d5-5049b4e793f5/2015_frank-in-the-shower_web.jpg)",
+		"url(https://ih1.redbubble.net/image.4792526861.8105/flat,750x,075,f-pad,750x1000,f8f8f8.jpg)",
+		"url(https://i.insider.com/645c457bd391de0019bd79b1?width=700)"
+
+
+		]
+
+	var x = Math.round(Math.random()*2);
+	console.log(artists[x])
+	console.log(x)
+
+	document.addEventListener("click", function(){
+		var x = Math.round(Math.random()*2);
+		console.log(x)
+		console.log(artists[x])
+		document.body.innerText=artists[x]
+	})
+
+</script>
+</body>
+</html>

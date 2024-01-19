@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+<center>Click to pick a subject to do homework on!!!
+</center>
+
+<script type="text/javascript">
+	
+	var subjects = [
+		"history",
+		"english",
+		"latin",
+		"math",
+		"biology"
+		]
+
+var x = Math.round(Math.random()*4);
+	console.log(subjects[x])
+	console.log(x)
+
+	document.addEventListener("click", function(){
+		var x = Math.round(Math.random()*4);
+		console.log(x)
+		console.log(subjects[x])
+		document.body.innerText=subjects[x]
+	})
+
+	
+</script>
+
+</body>
+</html>
