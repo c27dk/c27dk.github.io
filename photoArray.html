@@ -15,6 +15,7 @@
 	<h1> click to pick an artist to listen to!
 	</h1>
 	<center><div id = "pic"></div></center>
+	<audio id="song" controls></audio>
 <script type="text/javascript">
 	
 	var artists = [
@@ -25,13 +26,22 @@
 		"url(swift.jpg)"
 		]
 
-	
+	var songs = [
+		"pink.mp3",
+		"gooddays.mp3",
+		"heated.mp3",
+		"seeyou.mp3",
+		"august.mp3"
 
-	document.addEventListener("click", function(){
+		]
+
+	document.addEventListener("click", 
+		function(){
 		var x = Math.round(Math.random()*4);
 		console.log(x)
 		console.log(artists[x])
 		pic.style.backgroundImage=artists[x]
+		song.src =songs[x]
 	})
 
 </script>
