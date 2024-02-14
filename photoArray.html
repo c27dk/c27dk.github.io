@@ -9,6 +9,8 @@
 				background-position: center;
 				background-repeat: no-repeat;
 						}
+	
+
 	</style>
 </head>
 <body>
@@ -34,6 +36,14 @@
 		"august.mp3"
 
 		]
+	var music = [
+		"swimgood.mp3",
+		"snooze.mp3",
+		"lovedrought.mp3",
+		"ithink.mp3",
+		"haze.mp3"
+
+		]
 
 	document.addEventListener("click", 
 		function(){
@@ -41,7 +51,8 @@
 		console.log(x)
 		console.log(artists[x])
 		pic.style.backgroundImage=artists[x]
-		song.src =songs[x]
+		song.src=songs[x]
+		song.src=music[x]
 	})
 
 </script>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			font-family: 'Honk', system-ui;
+		}
+		
+		#maze{
+			background-image: url("vmaze.png");
+			background-repeat: no-repeat;
+			background-size: contain;
+			position: absolute;
+			bottom: 50px;
+			right:350px;
+			width:700px;
+			height:700px;
+		}
+		#hands{
+			background-image: url(https://t3.ftcdn.net/jpg/05/32/90/04/360_F_532900498_2QR20Z1Sjb9YJfyaedfaNjvouAH52ygi.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 200px;
+			height: 200px;
+			bottom: 25px;
+			right: 100px;
+			position: absolute;
+		}
+		#heart{
+			background-image: url("heart.png");
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 100px;
+			height: 100px;
+			bottom: 650px;
+			right: 1000px;
+			position: absolute;
+			
+		}
+	</style>
+</head>
+<body>
+	<center><h1>HAPPY VALENTINE'S DAY ALEXANDRA!!!</h1></center>
+	
+
+		<div id="maze"></div>
+		<div id="hands"></div>
+		<div id="heart"></div>
+
+
+<script type="text/javascript">
+
+	var x = 0;
+	var y = 0;
+
+	document.addEventListener("keydown",
+		function(event){
+			console.log(event.key)
+			if(event.key=="ArrowRight"){
+				x=x+15
+
+			heart.style.left = x +"px"
+			}
+			if(event.key=="ArrowLeft"){
+				x=x-15
+
+			heart.style.left = x +"px"
+			}
+			if(event.key=="ArrowDown"){
+				y=y+15
+
+			heart.style.top = y +"px"
+			}
+			if(event.key=="ArrowUp"){
+				y=y-15
+
+			heart.style.top = y +"px"
+			}
+		})
+</script>
+
+
+
+	
+</body>
+</html>

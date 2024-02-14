@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		body{
+			background-image:url(https://ecdn.teacherspayteachers.com/thumbitem/Racetrack-Game-Template-3727790-1656584082/original-3727790-1.jpg);
+			background-repeat: no-repeat;
+			background-size: contain;
+			height: 1000px;
+			width: 1000px;
+		}
+		#car{
+			width:200px;
+			height:200px;
+			background-image:url(https://t3.ftcdn.net/jpg/00/81/79/62/360_F_81796222_oX8c8nEWhJsw03CDq1bYLvqyvBGcR475.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: absolute;
+			
+		}
+	</style>
+</head>
+<body>
+
+	<div id="car"></div>
+
+<script type="text/javascript">
+
+	var x = 0;
+	var y = 0;
+
+	document.addEventListener("keydown",
+		function(event){
+			console.log(event.key)
+			if(event.key=="ArrowRight"){
+				x=x+15
+
+			car.style.left = x +"px"
+			}
+			if(event.key=="ArrowLeft"){
+				x=x-15
+
+			car.style.left = x +"px"
+			}
+			if(event.key=="ArrowDown"){
+				y=y+15
+
+			car.style.top = y +"px"
+			}
+			if(event.key=="ArrowUp"){
+				y=y-15
+
+			car.style.top = y +"px"
+			}
+		})
+</script>
+</body>
+</html>
