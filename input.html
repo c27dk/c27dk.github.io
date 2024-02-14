@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+roses are red, violets are blue<br>
+you are an angel and
+<input id="input"></input> too
+<br>
+<button id="submit">submit</button>
+
+<script type="text/javascript">
+	
+submit.addEventListener("click",
+	function(){
+		console.log(input.value)
+		
+
+		if (input.value =="cat"){
+			alert("omg, you're the one")
+		}
+		 else{
+		 alert("you're not a "+ input.value + " you're a devil")
+		 }
+	})
+
+</script>
+
+</body>
+</html>
