@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<style type="text/css">
+		body {
+			background-color: rgba(50, 200, 200, 1.0);
+		}
+	</style>
+</head>
+<body>
+click for different colors!
+<script type="text/javascript">
+
+document.addEventListener("click",
+		function(event){
+			var x = Math.random()*255;
+			var y = Math.random()*255;
+			var z = Math.random()*255;
+			var a = event.clientX;
+			var b = event.clientY;
+			var c = 0;
+			var d = a/(window.innerWidth/255); //this is how connor scales the screen to fit between the coordinates of 0 and 255 even though it exceeds 255
+			var e = b/(window.innerHeight/255);
+
+			document.body.style.backgroundColor = "rgba(" + c + "," + d + "," + e + ", 1.0)";
+		})
+</script>
+</body>
+</html>
