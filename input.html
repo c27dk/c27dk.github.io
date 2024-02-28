@@ -7,10 +7,8 @@
 </head>
 <body>
 
-roses are red, violets are blue<br>
-you are an angel and
-<input id="input"></input> too
-<br>
+<h1>what is my favorite movie?</h1>
+<input id = "input"></input>
 <button id="submit">submit</button>
 
 <script type="text/javascript">
@@ -20,11 +18,14 @@ submit.addEventListener("click",
 		console.log(input.value)
 		
 
-		if (input.value =="cat"){
+		if (input.value =="Knives Out"){
+			alert("omg, you're the one")
+		}
+		if (input.value =="knives out"){
 			alert("omg, you're the one")
 		}
 		 else{
-		 alert("you're not a "+ input.value + " you're a devil")
+		 alert("you're not the one")
 		 }
 	})
 
