@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<center>Click to pick a subject to do homework on!!!
+<center id="center">Click to pick a subject to do homework on!!!
 </center>
 
 <script type="text/javascript">
@@ -20,15 +20,11 @@
 		"biology"
 		]
 
-var x = Math.round(Math.random()*4);
-	console.log(subjects[x])
-	console.log(x)
-
 	document.addEventListener("click", function(){
 		var x = Math.round(Math.random()*4);
-		console.log(x)
-		console.log(subjects[x])
-		document.body.center=subjects[x]
+	console.log(subjects[x])
+	console.log(x)
+	center.innerText =subjects[x]
 	})
 
 	
